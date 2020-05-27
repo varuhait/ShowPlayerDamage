@@ -18,12 +18,10 @@ public final class PlayerDamaged implements Listener{
 			Player damager = (Player) p.getDamager();		//攻撃者をプレイヤー型へキャスト
 			Player defender = (Player) p.getEntity();		//被攻撃者をプレイヤー型へキャスト
 			//攻撃者に被攻撃者とダメージ量の表示
-			damager.sendMessage(ChatColor.GREEN + defender.getName() + "に" +
-								String.valueOf(p.getFinalDamage()) + "のダメージを与えた!");
+			damager.sendMessage(ChatColor.GREEN + defender.getName() + "に" + String.valueOf(p.getFinalDamage()) + "のダメージを与えた!");
 
 			//被攻撃者に攻撃者とダメージ量の表示
-			defender.sendMessage(ChatColor.RED + damager.getName() + "から" +
-								String.valueOf(p.getFinalDamage()) + "のダメージを受けた！");
+			defender.sendMessage(ChatColor.RED + damager.getName() + "から" + String.valueOf(p.getFinalDamage()) + "のダメージを受けた！");
 
 		}
 	}
