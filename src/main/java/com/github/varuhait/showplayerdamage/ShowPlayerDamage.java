@@ -7,8 +7,6 @@ public class ShowPlayerDamage extends JavaPlugin implements CommandExecutor{
 
 	@Override
 	public void onEnable() {
-		getCommand("spd").setExecutor(this);
-
 		getServer().getPluginManager().registerEvents(new PlayerDamaged(), this);
 		getLogger().info("ShowPlayerDamage Enabled");
 	}
